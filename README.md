@@ -90,6 +90,15 @@ git push origin main
 ## Complete Project
 Complete project as outlined in course content. 
 
+To incorporate Bootswatch themes, run the following: 
+```zsh
+pip install shinyswatch
+```
+And also add the import statement: 
+```zsh
+from shinyswatch import theme
+``` 
+
 ## After Changes, Export to Docs Folder
 
 Export to docs folder and test GitHub Pages locally.

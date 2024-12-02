@@ -3,11 +3,12 @@ from faicons import icon_svg
 
 from shiny import reactive
 from shiny.express import input, render, ui
+from shinyswatch import theme
 import palmerpenguins 
 
 df = palmerpenguins.load_penguins()
 
-ui.page_opts(title="Penguins dashboard", fillable=True)
+ui.page_opts(title="Penguins dashboard", fillable=True, theme=theme.vapor)
 
 
 with ui.sidebar(title="Filter controls"):
