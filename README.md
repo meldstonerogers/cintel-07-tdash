@@ -25,11 +25,10 @@ That project README.md has more detailed instructions, including reminders for M
 
 Fork this project into your own GitHub account.
 Clone **your** GitHub repo down to your local machine.
-IMPORTANT: Use your GitHub **username** in place of denisecase.
 [GitHub CLI](https://cli.github.com/) may work better on some machines.
 
-```shell
-git clone https://github.com/denisecase/cintel-07-tdash
+```zsh
+git clone REPO URL
 ```
 
 ## Run Locally - Initial Start
