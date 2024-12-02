@@ -62,7 +62,8 @@ Open a browser to <http://127.0.0.1:8000/> and test the app.
 Open a terminal (VS Code menu "View" / "Terminal") in the root project folder and run these commands.
 
 ```zsh
-.venv\Scripts\Activate
+python3 -m venv venv
+source venv/bin/activate
 shiny run --reload --launch-browser app/app.py
 ```
 
@@ -106,10 +107,10 @@ Open a new terminal (VS Code menu "Terminal" / "New Terminal") in the root proje
 Remember to activate the environment first. 
 
 ```zsh
-.venv\Scripts\Activate
+source venv/bin/activate
 shiny static-assets remove
 shinylive export app docs
-py -m http.server --directory docs --bind localhost 8008
+python3 -m http.server --directory docs --bind localhost 8008
 ```
 
 Open a browser to <http://[::1]:8008/> and test the Pages app.
