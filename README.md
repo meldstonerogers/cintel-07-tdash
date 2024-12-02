@@ -43,16 +43,16 @@ If you miss the window, after installing, select from the VS Code menu, View / C
 
 Open a terminal (VS Code menu "View" / "Terminal") in the root project folder and run these commands (for Windows - the activate command is slightly different Linux/Mac).
 
-```shell
-py -m venv .venv
+```zsh
+python3 -m venv .venv
 .venv\Scripts\Activate
-py -m pip install --upgrade pip setuptools
-py -m pip install --upgrade -r requirements.txt
+python3 -m pip install --upgrade pip setuptools
+python3 -m pip install --upgrade -r requirements.txt
 ```
 
 Open a terminal (VS Code menu "View" / "Terminal") in the root project folder and run these commands.
 
-```shell
+```zsh
 shiny run --reload --launch-browser app/app.py
 ```
 
@@ -62,13 +62,33 @@ Open a browser to <http://127.0.0.1:8000/> and test the app.
 
 Open a terminal (VS Code menu "View" / "Terminal") in the root project folder and run these commands.
 
-```shell
+```zsh
 .venv\Scripts\Activate
 shiny run --reload --launch-browser app/app.py
 ```
 
 While the app is running, the terminal is fully engaged and cannot be used for other commands. 
 To kill the terminal, click the trashcan icon in the VS Code terminal window. 
+
+## Install required packages and dependencies into virtual enviornment
+
+Install VS Code Extension for Shiny if you have not done so already.
+
+Install and freeze required packages and dependencies. 
+```
+pip install -r requirements.txt
+python3 -m pip freeze > requirements.txt
+```
+
+## Initial Project Save
+```
+git add .
+git commit -m "initial"                         
+git push origin main
+```
+
+## Complete Project
+Complete project as outlined in course content. 
 
 ## After Changes, Export to Docs Folder
 
@@ -77,7 +97,7 @@ Export to docs folder and test GitHub Pages locally.
 Open a new terminal (VS Code menu "Terminal" / "New Terminal") in the root project folder and run these commands. 
 Remember to activate the environment first. 
 
-```shell
+```zsh
 .venv\Scripts\Activate
 shiny static-assets remove
 shinylive export app docs
@@ -90,7 +110,7 @@ Open a browser to <http://[::1]:8008/> and test the Pages app.
 
 Open a terminal (VS Code menu "Terminal" / "New Terminal") in the root project folder and run these commands.
 
-```shell
+```zsh
 git add .
 git commit -m "Useful commit message"
 git push -u origin main
