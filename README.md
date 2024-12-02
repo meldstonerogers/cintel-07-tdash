@@ -1,4 +1,5 @@
-# PyShiny Basic Dashboard (Penguins)
+# CINTEL Module 7 Project
+Melissa Stone Rogers, [GitHub](https://github.com/meldstonerogers/cintel-07-tdash)
 
 ## Tools
 
